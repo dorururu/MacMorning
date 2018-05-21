@@ -10,7 +10,7 @@
 		E547EC5520B2B910009B090B /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E547EC5420B2B90F009B090B /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		E547EC5720B2B917009B090B /* ImageClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E547EC5620B2B917009B090B /* ImageClassificationViewController.swift */; };
 		E547EC5920B2B9C3009B090B /* OurCars.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E547EC5820B2B9C3009B090B /* OurCars.mlmodel */; };
-		E547EC6120B2D540009B090B /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E547EC6020B2D540009B090B /* noImage.png */; };
+		E547EC6320B2D6BD009B090B /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E547EC6220B2D6BD009B090B /* noImage.png */; };
 		E5F8E1AD20AE9EAD00D5FC18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F8E1AC20AE9EAD00D5FC18 /* AppDelegate.swift */; };
 		E5F8E1AF20AE9EAD00D5FC18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F8E1AE20AE9EAD00D5FC18 /* ViewController.swift */; };
 		E5F8E1B220AE9EAD00D5FC18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F8E1B020AE9EAD00D5FC18 /* Main.storyboard */; };
@@ -35,7 +35,7 @@
 		E547EC5420B2B90F009B090B /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		E547EC5620B2B917009B090B /* ImageClassificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageClassificationViewController.swift; sourceTree = "<group>"; };
 		E547EC5820B2B9C3009B090B /* OurCars.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = OurCars.mlmodel; sourceTree = "<group>"; };
-		E547EC6020B2D540009B090B /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noImage.png; sourceTree = "<group>"; };
+		E547EC6220B2D6BD009B090B /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noImage.png; sourceTree = "<group>"; };
 		E5F8E1A920AE9EAD00D5FC18 /* carcar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carcar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F8E1AC20AE9EAD00D5FC18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5F8E1AE20AE9EAD00D5FC18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,8 +116,8 @@
 		E5F8E1CC20AE9F2000D5FC18 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E547EC6020B2D540009B090B /* noImage.png */,
 				E5F8E1CD20AE9F2000D5FC18 /* home.png */,
+				E547EC6220B2D6BD009B090B /* noImage.png */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -205,7 +205,7 @@
 			files = (
 				E5F8E1CE20AE9F2000D5FC18 /* home.png in Resources */,
 				E5F8E1B720AE9EAE00D5FC18 /* LaunchScreen.storyboard in Resources */,
-				E547EC6120B2D540009B090B /* noImage.png in Resources */,
+				E547EC6320B2D6BD009B090B /* noImage.png in Resources */,
 				E5F8E1B420AE9EAE00D5FC18 /* Assets.xcassets in Resources */,
 				E5F8E1B220AE9EAD00D5FC18 /* Main.storyboard in Resources */,
 			);
