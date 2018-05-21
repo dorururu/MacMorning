@@ -11,6 +11,11 @@
 		E547EC5720B2B917009B090B /* ImageClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E547EC5620B2B917009B090B /* ImageClassificationViewController.swift */; };
 		E547EC5920B2B9C3009B090B /* OurCars.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E547EC5820B2B9C3009B090B /* OurCars.mlmodel */; };
 		E547EC6320B2D6BD009B090B /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E547EC6220B2D6BD009B090B /* noImage.png */; };
+		E57C227E20B3068000A9ADB0 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C227D20B3068000A9ADB0 /* ARViewController.swift */; };
+		E57C228020B3077500A9ADB0 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C227F20B3077500A9ADB0 /* StatusViewController.swift */; };
+		E57C228520B30A3F00A9ADB0 /* TemplateLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C228220B30A3F00A9ADB0 /* TemplateLabelNode.swift */; };
+		E57C228620B30A3F00A9ADB0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C228320B30A3F00A9ADB0 /* Utilities.swift */; };
+		E57C228720B30A3F00A9ADB0 /* LabelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E57C228420B30A3F00A9ADB0 /* LabelScene.sks */; };
 		E5F8E1AD20AE9EAD00D5FC18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F8E1AC20AE9EAD00D5FC18 /* AppDelegate.swift */; };
 		E5F8E1AF20AE9EAD00D5FC18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F8E1AE20AE9EAD00D5FC18 /* ViewController.swift */; };
 		E5F8E1B220AE9EAD00D5FC18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F8E1B020AE9EAD00D5FC18 /* Main.storyboard */; };
@@ -36,6 +41,11 @@
 		E547EC5620B2B917009B090B /* ImageClassificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageClassificationViewController.swift; sourceTree = "<group>"; };
 		E547EC5820B2B9C3009B090B /* OurCars.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = OurCars.mlmodel; sourceTree = "<group>"; };
 		E547EC6220B2D6BD009B090B /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noImage.png; sourceTree = "<group>"; };
+		E57C227D20B3068000A9ADB0 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		E57C227F20B3077500A9ADB0 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		E57C228220B30A3F00A9ADB0 /* TemplateLabelNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateLabelNode.swift; sourceTree = "<group>"; };
+		E57C228320B30A3F00A9ADB0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E57C228420B30A3F00A9ADB0 /* LabelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LabelScene.sks; sourceTree = "<group>"; };
 		E5F8E1A920AE9EAD00D5FC18 /* carcar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carcar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F8E1AC20AE9EAD00D5FC18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5F8E1AE20AE9EAD00D5FC18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +78,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E57C228120B3099800A9ADB0 /* AR Files */ = {
+			isa = PBXGroup;
+			children = (
+				E57C228420B30A3F00A9ADB0 /* LabelScene.sks */,
+				E57C228220B30A3F00A9ADB0 /* TemplateLabelNode.swift */,
+				E57C228320B30A3F00A9ADB0 /* Utilities.swift */,
+			);
+			path = "AR Files";
+			sourceTree = "<group>";
+		};
 		E5F8E1A020AE9EAD00D5FC18 = {
 			isa = PBXGroup;
 			children = (
@@ -90,15 +110,16 @@
 			isa = PBXGroup;
 			children = (
 				E5F8E1CC20AE9F2000D5FC18 /* Supporting Files */,
+				E57C228120B3099800A9ADB0 /* AR Files */,
 				E5F8E1AC20AE9EAD00D5FC18 /* AppDelegate.swift */,
 				E5F8E1AE20AE9EAD00D5FC18 /* ViewController.swift */,
 				E5F8E1CF20AE9F4A00D5FC18 /* UIButton.swift */,
-				E547EC5420B2B90F009B090B /* CGImagePropertyOrientation+UIImageOrientation.swift */,
 				E547EC5620B2B917009B090B /* ImageClassificationViewController.swift */,
+				E547EC5420B2B90F009B090B /* CGImagePropertyOrientation+UIImageOrientation.swift */,
 				E5F8E1B020AE9EAD00D5FC18 /* Main.storyboard */,
+				E57C227D20B3068000A9ADB0 /* ARViewController.swift */,
+				E57C227F20B3077500A9ADB0 /* StatusViewController.swift */,
 				E547EC5820B2B9C3009B090B /* OurCars.mlmodel */,
-				E5F8E1B320AE9EAE00D5FC18 /* Assets.xcassets */,
-				E5F8E1B520AE9EAE00D5FC18 /* LaunchScreen.storyboard */,
 				E5F8E1B820AE9EAE00D5FC18 /* Info.plist */,
 			);
 			path = carcar;
@@ -118,6 +139,8 @@
 			children = (
 				E5F8E1CD20AE9F2000D5FC18 /* home.png */,
 				E547EC6220B2D6BD009B090B /* noImage.png */,
+				E5F8E1B320AE9EAE00D5FC18 /* Assets.xcassets */,
+				E5F8E1B520AE9EAE00D5FC18 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -204,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5F8E1CE20AE9F2000D5FC18 /* home.png in Resources */,
+				E57C228720B30A3F00A9ADB0 /* LabelScene.sks in Resources */,
 				E5F8E1B720AE9EAE00D5FC18 /* LaunchScreen.storyboard in Resources */,
 				E547EC6320B2D6BD009B090B /* noImage.png in Resources */,
 				E5F8E1B420AE9EAE00D5FC18 /* Assets.xcassets in Resources */,
@@ -225,11 +249,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57C228020B3077500A9ADB0 /* StatusViewController.swift in Sources */,
+				E57C227E20B3068000A9ADB0 /* ARViewController.swift in Sources */,
 				E547EC5520B2B910009B090B /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				E5F8E1AF20AE9EAD00D5FC18 /* ViewController.swift in Sources */,
 				E547EC5920B2B9C3009B090B /* OurCars.mlmodel in Sources */,
+				E57C228520B30A3F00A9ADB0 /* TemplateLabelNode.swift in Sources */,
 				E5F8E1AD20AE9EAD00D5FC18 /* AppDelegate.swift in Sources */,
 				E5F8E1D020AE9F4A00D5FC18 /* UIButton.swift in Sources */,
+				E57C228620B30A3F00A9ADB0 /* Utilities.swift in Sources */,
 				E547EC5720B2B917009B090B /* ImageClassificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,13 +419,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U3PL3YN84V;
+				DEVELOPMENT_TEAM = KC9V2LPZZM;
 				INFOPLIST_FILE = carcar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = askyox7595;
+				PRODUCT_BUNDLE_IDENTIFIER = petibelle29;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -409,13 +437,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U3PL3YN84V;
+				DEVELOPMENT_TEAM = KC9V2LPZZM;
 				INFOPLIST_FILE = carcar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = askyox7595;
+				PRODUCT_BUNDLE_IDENTIFIER = petibelle29;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

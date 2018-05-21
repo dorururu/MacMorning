@@ -16,8 +16,7 @@ class UIRoundButton1: UIButton {
     }
 }
 
-
-class UIRoundButton3: UIButton {
+class UIRoundButton2: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         self.layer.cornerRadius = 5.0;

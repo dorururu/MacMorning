@@ -14,10 +14,9 @@ class ImageClassificationViewController: UIViewController {
     // MARK: - IBOutlets
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var cameraButton: UIButton!
+    @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var classificationLabel: UILabel!
 
-    
     // MARK: - Image Classification
     
     /// - Tag: MLModelSetup
@@ -89,7 +88,7 @@ class ImageClassificationViewController: UIViewController {
     
     // MARK: - Photo Actions
     
-    @IBAction func takePicture() {
+    @IBAction func takePicture(_ sender: UIBarButtonItem) {
         // Show options for the source picker only if the camera is available.
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             presentPhotoPicker(sourceType: .photoLibrary)
