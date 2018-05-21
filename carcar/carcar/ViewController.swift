@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var homeImage: UIImageView!
+    @IBOutlet weak var photoAction: UIRoundButton1!
     
     func showImage() {
         homeImage.image = UIImage(named: "home.png")

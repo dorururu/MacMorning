@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E547EC5520B2B910009B090B /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E547EC5420B2B90F009B090B /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+		E547EC5720B2B917009B090B /* ImageClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E547EC5620B2B917009B090B /* ImageClassificationViewController.swift */; };
+		E547EC5920B2B9C3009B090B /* OurCars.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E547EC5820B2B9C3009B090B /* OurCars.mlmodel */; };
 		E5F8E1AD20AE9EAD00D5FC18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F8E1AC20AE9EAD00D5FC18 /* AppDelegate.swift */; };
 		E5F8E1AF20AE9EAD00D5FC18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F8E1AE20AE9EAD00D5FC18 /* ViewController.swift */; };
 		E5F8E1B220AE9EAD00D5FC18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F8E1B020AE9EAD00D5FC18 /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E547EC5420B2B90F009B090B /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		E547EC5620B2B917009B090B /* ImageClassificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageClassificationViewController.swift; sourceTree = "<group>"; };
+		E547EC5820B2B9C3009B090B /* OurCars.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = OurCars.mlmodel; sourceTree = "<group>"; };
 		E5F8E1A920AE9EAD00D5FC18 /* carcar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carcar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F8E1AC20AE9EAD00D5FC18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5F8E1AE20AE9EAD00D5FC18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +91,10 @@
 				E5F8E1AC20AE9EAD00D5FC18 /* AppDelegate.swift */,
 				E5F8E1AE20AE9EAD00D5FC18 /* ViewController.swift */,
 				E5F8E1CF20AE9F4A00D5FC18 /* UIButton.swift */,
+				E547EC5420B2B90F009B090B /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+				E547EC5620B2B917009B090B /* ImageClassificationViewController.swift */,
 				E5F8E1B020AE9EAD00D5FC18 /* Main.storyboard */,
+				E547EC5820B2B9C3009B090B /* OurCars.mlmodel */,
 				E5F8E1B320AE9EAE00D5FC18 /* Assets.xcassets */,
 				E5F8E1B520AE9EAE00D5FC18 /* LaunchScreen.storyboard */,
 				E5F8E1B820AE9EAE00D5FC18 /* Info.plist */,
@@ -212,9 +221,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E547EC5520B2B910009B090B /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				E5F8E1AF20AE9EAD00D5FC18 /* ViewController.swift in Sources */,
+				E547EC5920B2B9C3009B090B /* OurCars.mlmodel in Sources */,
 				E5F8E1AD20AE9EAD00D5FC18 /* AppDelegate.swift in Sources */,
 				E5F8E1D020AE9F4A00D5FC18 /* UIButton.swift in Sources */,
+				E547EC5720B2B917009B090B /* ImageClassificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,12 +387,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3PL3YN84V;
 				INFOPLIST_FILE = carcar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = macmorning.carcar;
+				PRODUCT_BUNDLE_IDENTIFIER = askyox7595;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -392,12 +405,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3PL3YN84V;
 				INFOPLIST_FILE = carcar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = macmorning.carcar;
+				PRODUCT_BUNDLE_IDENTIFIER = askyox7595;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
