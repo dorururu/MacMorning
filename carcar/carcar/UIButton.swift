@@ -8,18 +8,12 @@
 
 import UIKit
 
-class UIRoundButton1: UIButton {
+class UIRoundButton: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
-        self.layer.cornerRadius = 5.0;
-        self.backgroundColor = UIColor(red: 136/255, green: 199/255, blue: 193/255, alpha: 1)
-    }
-}
-
-class UIRoundButton2: UIButton {
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-        self.layer.cornerRadius = 5.0;
-        self.backgroundColor = UIColor(red: 197/255, green: 162/255, blue: 219/255, alpha: 1)
+        self.layer.cornerRadius = 10.0;
+        self.backgroundColor = UIColor(red: 37/255, green: 46/255, blue: 68/255, alpha: 0)
+        self.layer.borderColor = UIColor(red: 37/255, green: 46/255, blue: 68/255, alpha: 1).cgColor
+        self.layer.borderWidth = 3
     }
 }
