@@ -91,12 +91,14 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Back" id="a13-GJ-CH5">
+                                        <color key="tintColor" red="1" green="0.21960784310000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="presentation" id="YFq-Mp-LJO"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem width="278" style="plain" systemItem="fixedSpace" id="FDC-hn-Zqx"/>
                                     <barButtonItem systemItem="camera" id="wGd-dv-efL">
+                                        <color key="tintColor" red="1" green="0.21960784310000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="takePicture:" destination="hla-WE-0tb" id="yv9-df-sxZ"/>
                                         </connections>
