@@ -17,6 +17,7 @@ class ImageClassificationViewController: UIViewController {
     @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var classificationLabel: UILabel!
 
+    var highConfidenceCar = ""
     // MARK: - Image Classification
     
     /// - Tag: MLModelSetup
@@ -81,6 +82,7 @@ class ImageClassificationViewController: UIViewController {
                     // Formats the classification for display; e.g. "(0.37) cliff, drop, drop-off".
                    return String(format: "  (%.2f) %@", classification.confidence, classification.identifier)
                 }
+                self.highConfidenceCar = (topClassifications.first?.identifier)!
                 self.classificationLabel.text = "Classification:\n" + descriptions.joined(separator: "\n")
             }
         }
@@ -122,9 +124,10 @@ class ImageClassificationViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segData" {
             let sendCarName = segue.destination as! DataController
-            sendCarName.carName = "kia"
+            sendCarName.carName = highConfidenceCar
         }
     }
+  
 }
 
 extension ImageClassificationViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
