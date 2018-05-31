@@ -13,11 +13,18 @@ import Vision
 
 class ARViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewDelegate, ARSessionDelegate {
     
+    //차 이름 전역변수
+    var carsname=""
+    
     @IBOutlet weak var ARSceneView: ARSKView!
     
     // The view controller that displays the status and "restart experience" UI.
     private lazy var statusViewController: StatusViewController = {
         return childViewControllers.lazy.flatMap({ $0 as? StatusViewController }).first!
+    }()
+    
+    private lazy var infoViewController: ARInfoViewController = {
+        return childViewControllers.lazy.flatMap({ $0 as? ARInfoViewController }).first!
     }()
     
     // MARK: - View controller lifecycle
@@ -155,6 +162,19 @@ class ARViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewD
         }
         let message = String(format: "Detected \(self.identifierString) with %.2f", self.confidence * 100) + "% confidence"
         statusViewController.showMessage(message)
+        
+        //분류된 차 이름 전달
+        let carName = String("\(self.identifierString)")
+        infoViewController.showImage(carName)
+        carsname = carName
+    }
+    
+    // MARK: - 그 순간의 차 이름을 DataController에 전달
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segAR" {
+            let sendCarName = segue.destination as! DataController
+            sendCarName.carName = carsname
+        }
     }
     
     // MARK: - Tap gesture handler & ARSKViewDelegate
@@ -268,6 +288,4 @@ class ARViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewD
         alertController.addAction(restartAction)
         present(alertController, animated: true, completion: nil)
     }
-    
-    
 }

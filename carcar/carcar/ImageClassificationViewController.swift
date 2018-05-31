@@ -41,7 +41,6 @@ class ImageClassificationViewController: UIViewController {
     
     /// - Tag: PerformRequests
     func updateClassifications(for image: UIImage) {
-        loadData()
         classificationLabel.text = "Classifying..."
         
         let orientation = CGImagePropertyOrientation(image.imageOrientation)
@@ -119,49 +118,11 @@ class ImageClassificationViewController: UIViewController {
         present(picker, animated: true)
     }
     
-    func loadData() {
-        let fileManager = FileManager.default
-        let dirPaths = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        var databasePath = dirPaths.appendingPathComponent("carsample.db").path
-        
-        let sourcePath = Bundle.main.path(forResource: "carsample", ofType: "db")
-        let destinationPath = databasePath
-        
-        if !fileManager.fileExists(atPath: databasePath) {
-            do {
-                try FileManager.default.copyItem(atPath: sourcePath!, toPath: destinationPath)
-            } catch let _ as NSError {
-                NSLog("카피 실패")
-            }
-        }
-
-        if !fileManager.fileExists(atPath: databasePath) {
-            NSLog("카피 했는데 또 없으면 이상한 것")
-        }else {
-            print("Database file found at path: \(databasePath)")
-            let carDB = FMDatabase(path: databasePath)
-            
-            if carDB == nil {
-                print("Error: \(carDB.lastErrorMessage())")
-            }
-            
-            if carDB.open() {
-                NSLog("디비 열림")
-                let sql = "SELECT name, info FROM car WHERE name = 'kia'"
-                let paramDictionary = [NSObject:AnyObject]()
-                let results:FMResultSet? = carDB.executeQuery(sql, withParameterDictionary: paramDictionary)
-                
-                if (results == nil) {
-                    print("Error: \(carDB.lastErrorMessage())")
-                }else{
-                    while(results?.next() == true) {
-                        NSLog((results?.string(forColumn: "name"))!)
-                        NSLog((results?.string(forColumn: "info"))!)
-                    }
-                }
-            }else {
-                NSLog("디비 안 열림")
-            }
+    // MARK: - 자동차 정보 페이지로 데이터 전달
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segData" {
+            let sendCarName = segue.destination as! DataController
+            sendCarName.carName = "kia"
         }
     }
 }

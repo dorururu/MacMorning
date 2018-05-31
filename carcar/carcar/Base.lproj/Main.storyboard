@@ -83,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="OrW-9B-hz8">
-                                <rect key="frame" x="0.0" y="20" width="375" height="375"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G0z-iu-1al">
@@ -106,12 +106,20 @@
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea9-vY-VUb">
-                                <rect key="frame" x="16" y="485" width="201" height="112"/>
+                                <rect key="frame" x="16" y="511" width="201" height="112"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtY-pI-aOm">
+                                <rect key="frame" x="252" y="552" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="information"/>
+                                <connections>
+                                    <segue destination="w8N-uU-yJr" kind="presentation" identifier="segData" id="6Ee-ug-aBd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="uud-hx-nOT"/>
@@ -124,7 +132,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0vg-oh-Pgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="945" y="133"/>
+            <point key="canvasLocation" x="944.79999999999995" y="132.68365817091455"/>
+        </scene>
+        <!--Data Controller-->
+        <scene sceneID="dwP-vV-2Ag">
+            <objects>
+                <viewController id="w8N-uU-yJr" customClass="DataController" customModule="carcar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fxw-au-Ae0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rFR-03-3Kb">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="done" id="7Sc-uU-25V">
+                                        <color key="tintColor" red="1" green="0.21960784310000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" id="Izf-3a-vfD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ESB-vf-3x5">
+                                <rect key="frame" x="49" y="102" width="277" height="383"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oRa-3C-LgL"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataText" destination="ESB-vf-3x5" id="ZK1-u9-GfN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHf-tM-a8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1983" y="133"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qBV-Jd-Njr">
@@ -154,6 +201,21 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="PF5-VM-8AT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aA-EE-UZL">
+                                <rect key="frame" x="270" y="519" width="60" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="carinfo.png"/>
+                                <connections>
+                                    <segue destination="w8N-uU-yJr" kind="presentation" identifier="segAR" id="maV-EU-4LL"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S1Q-Xf-We4">
+                                <rect key="frame" x="45" y="494" width="200" height="103"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="g5w-uy-A8d" kind="embed" id="x9B-EZ-FHg"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="CCO-Tc-Ic9"/>
@@ -164,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ren-oK-YAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="913"/>
+            <point key="canvasLocation" x="136.80000000000001" y="912.5937031484259"/>
         </scene>
         <!--Status View Controller-->
         <scene sceneID="Gar-tN-NEa">
@@ -253,17 +315,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cE8-wM-n4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="945" y="934"/>
+            <point key="canvasLocation" x="1049" y="936"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="Kaj-bo-EQU">
+            <objects>
+                <viewController id="g5w-uy-A8d" customClass="ARInfoViewController" customModule="carcar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n1q-Xu-VFn">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="103"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgi-hG-Ncz">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AkG-PU-Ebg"/>
+                    </view>
+                    <connections>
+                        <outlet property="carImageView" destination="cgi-hG-Ncz" id="dxI-ZG-sDV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7O-b6-dtl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944" y="1126.6866566716642"/>
         </scene>
     </scenes>
     <resources>
         <image name="Back" width="94" height="92"/>
+        <image name="carinfo.png" width="102" height="89"/>
         <image name="logo" width="60" height="60"/>
         <image name="noImage.png" width="650" height="750"/>
         <image name="restart" width="20" height="23"/>
         <image name="restartPressed" width="20" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YFq-Mp-LJO"/>
+        <segue reference="maV-EU-4LL"/>
+        <segue reference="Izf-3a-vfD"/>
     </inferredMetricsTieBreakers>
 </document>

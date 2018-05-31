@@ -16,7 +16,26 @@
 		E577855720BEEF5D0033DC18 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E577855020BEEF5C0033DC18 /* FMResultSet.m */; };
 		E577855820BEEF5D0033DC18 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E577855320BEEF5D0033DC18 /* FMDatabasePool.m */; };
 		E577855B20BEEF780033DC18 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E577855A20BEEF780033DC18 /* libsqlite3.tbd */; };
-		E577855E20BEF1390033DC18 /* carsample.db in Resources */ = {isa = PBXBuildFile; fileRef = E577855D20BEF00F0033DC18 /* carsample.db */; };
+		E577856020BFD51D0033DC18 /* ARInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E577855F20BFD51D0033DC18 /* ARInfoViewController.swift */; };
+		E577857620BFE74F0033DC18 /* benz_gls.png in Resources */ = {isa = PBXBuildFile; fileRef = E577856620BFE74B0033DC18 /* benz_gls.png */; };
+		E577857720BFE74F0033DC18 /* mini_countryman.png in Resources */ = {isa = PBXBuildFile; fileRef = E577856720BFE74B0033DC18 /* mini_countryman.png */; };
+		E577857820BFE74F0033DC18 /* benz_eclass.png in Resources */ = {isa = PBXBuildFile; fileRef = E577856820BFE74C0033DC18 /* benz_eclass.png */; };
+		E577857920BFE74F0033DC18 /* kia_k9.png in Resources */ = {isa = PBXBuildFile; fileRef = E577856920BFE74C0033DC18 /* kia_k9.png */; };
+		E577857A20BFE74F0033DC18 /* volkswagen_passat.png in Resources */ = {isa = PBXBuildFile; fileRef = E577856A20BFE74C0033DC18 /* volkswagen_passat.png */; };
+		E577857B20BFE74F0033DC18 /* audi_a6.png in Resources */ = {isa = PBXBuildFile; fileRef = E577856B20BFE74D0033DC18 /* audi_a6.png */; };
+		E577857C20BFE74F0033DC18 /* bmw_i3.png in Resources */ = {isa = PBXBuildFile; fileRef = E577856C20BFE74D0033DC18 /* bmw_i3.png */; };
+		E577857D20BFE74F0033DC18 /* toyota_sienna.png in Resources */ = {isa = PBXBuildFile; fileRef = E577856D20BFE74D0033DC18 /* toyota_sienna.png */; };
+		E577857E20BFE74F0033DC18 /* volkswagen_tiguan.png in Resources */ = {isa = PBXBuildFile; fileRef = E577856E20BFE74D0033DC18 /* volkswagen_tiguan.png */; };
+		E577857F20BFE74F0033DC18 /* kia_allnewmorning.png in Resources */ = {isa = PBXBuildFile; fileRef = E577856F20BFE74D0033DC18 /* kia_allnewmorning.png */; };
+		E577858020BFE74F0033DC18 /* toyota_camry.png in Resources */ = {isa = PBXBuildFile; fileRef = E577857020BFE74E0033DC18 /* toyota_camry.png */; };
+		E577858120BFE74F0033DC18 /* hyundai_kona.png in Resources */ = {isa = PBXBuildFile; fileRef = E577857120BFE74E0033DC18 /* hyundai_kona.png */; };
+		E577858220BFE74F0033DC18 /* bmw_i8.png in Resources */ = {isa = PBXBuildFile; fileRef = E577857220BFE74E0033DC18 /* bmw_i8.png */; };
+		E577858320BFE74F0033DC18 /* hyundai_veloster.png in Resources */ = {isa = PBXBuildFile; fileRef = E577857320BFE74F0033DC18 /* hyundai_veloster.png */; };
+		E577858420BFE74F0033DC18 /* mini_hatch.png in Resources */ = {isa = PBXBuildFile; fileRef = E577857420BFE74F0033DC18 /* mini_hatch.png */; };
+		E577858520BFE74F0033DC18 /* audi_q7.png in Resources */ = {isa = PBXBuildFile; fileRef = E577857520BFE74F0033DC18 /* audi_q7.png */; };
+		E577858920BFF33D0033DC18 /* carinfo.png in Resources */ = {isa = PBXBuildFile; fileRef = E577858820BFF33D0033DC18 /* carinfo.png */; };
+		E577858B20C005DE0033DC18 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E577858A20C005DE0033DC18 /* DataController.swift */; };
+		E577858D20C032D90033DC18 /* cars.db in Resources */ = {isa = PBXBuildFile; fileRef = E577858C20C032AA0033DC18 /* cars.db */; };
 		E57C227E20B3068000A9ADB0 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C227D20B3068000A9ADB0 /* ARViewController.swift */; };
 		E57C228020B3077500A9ADB0 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C227F20B3077500A9ADB0 /* StatusViewController.swift */; };
 		E57C228520B30A3F00A9ADB0 /* TemplateLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C228220B30A3F00A9ADB0 /* TemplateLabelNode.swift */; };
@@ -60,7 +79,26 @@
 		E577855220BEEF5D0033DC18 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
 		E577855320BEEF5D0033DC18 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		E577855A20BEEF780033DC18 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		E577855D20BEF00F0033DC18 /* carsample.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = carsample.db; sourceTree = "<group>"; };
+		E577855F20BFD51D0033DC18 /* ARInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARInfoViewController.swift; sourceTree = "<group>"; };
+		E577856620BFE74B0033DC18 /* benz_gls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = benz_gls.png; sourceTree = "<group>"; };
+		E577856720BFE74B0033DC18 /* mini_countryman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mini_countryman.png; sourceTree = "<group>"; };
+		E577856820BFE74C0033DC18 /* benz_eclass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = benz_eclass.png; sourceTree = "<group>"; };
+		E577856920BFE74C0033DC18 /* kia_k9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kia_k9.png; sourceTree = "<group>"; };
+		E577856A20BFE74C0033DC18 /* volkswagen_passat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volkswagen_passat.png; sourceTree = "<group>"; };
+		E577856B20BFE74D0033DC18 /* audi_a6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audi_a6.png; sourceTree = "<group>"; };
+		E577856C20BFE74D0033DC18 /* bmw_i3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bmw_i3.png; sourceTree = "<group>"; };
+		E577856D20BFE74D0033DC18 /* toyota_sienna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toyota_sienna.png; sourceTree = "<group>"; };
+		E577856E20BFE74D0033DC18 /* volkswagen_tiguan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volkswagen_tiguan.png; sourceTree = "<group>"; };
+		E577856F20BFE74D0033DC18 /* kia_allnewmorning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kia_allnewmorning.png; sourceTree = "<group>"; };
+		E577857020BFE74E0033DC18 /* toyota_camry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toyota_camry.png; sourceTree = "<group>"; };
+		E577857120BFE74E0033DC18 /* hyundai_kona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hyundai_kona.png; sourceTree = "<group>"; };
+		E577857220BFE74E0033DC18 /* bmw_i8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bmw_i8.png; sourceTree = "<group>"; };
+		E577857320BFE74F0033DC18 /* hyundai_veloster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hyundai_veloster.png; sourceTree = "<group>"; };
+		E577857420BFE74F0033DC18 /* mini_hatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mini_hatch.png; sourceTree = "<group>"; };
+		E577857520BFE74F0033DC18 /* audi_q7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audi_q7.png; sourceTree = "<group>"; };
+		E577858820BFF33D0033DC18 /* carinfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carinfo.png; sourceTree = "<group>"; };
+		E577858A20C005DE0033DC18 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		E577858C20C032AA0033DC18 /* cars.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = cars.db; sourceTree = "<group>"; };
 		E57C227D20B3068000A9ADB0 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		E57C227F20B3077500A9ADB0 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		E57C228220B30A3F00A9ADB0 /* TemplateLabelNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateLabelNode.swift; sourceTree = "<group>"; };
@@ -127,6 +165,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E577856520BFE7030033DC18 /* carthumbnail */ = {
+			isa = PBXGroup;
+			children = (
+				E577856B20BFE74D0033DC18 /* audi_a6.png */,
+				E577857520BFE74F0033DC18 /* audi_q7.png */,
+				E577856820BFE74C0033DC18 /* benz_eclass.png */,
+				E577856620BFE74B0033DC18 /* benz_gls.png */,
+				E577856C20BFE74D0033DC18 /* bmw_i3.png */,
+				E577857220BFE74E0033DC18 /* bmw_i8.png */,
+				E577857120BFE74E0033DC18 /* hyundai_kona.png */,
+				E577857320BFE74F0033DC18 /* hyundai_veloster.png */,
+				E577856F20BFE74D0033DC18 /* kia_allnewmorning.png */,
+				E577856920BFE74C0033DC18 /* kia_k9.png */,
+				E577856720BFE74B0033DC18 /* mini_countryman.png */,
+				E577857420BFE74F0033DC18 /* mini_hatch.png */,
+				E577857020BFE74E0033DC18 /* toyota_camry.png */,
+				E577856D20BFE74D0033DC18 /* toyota_sienna.png */,
+				E577856A20BFE74C0033DC18 /* volkswagen_passat.png */,
+				E577856E20BFE74D0033DC18 /* volkswagen_tiguan.png */,
+			);
+			path = carthumbnail;
+			sourceTree = "<group>";
+		};
 		E57C228120B3099800A9ADB0 /* AR Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +220,7 @@
 		E5F8E1AB20AE9EAD00D5FC18 /* carcar */ = {
 			isa = PBXGroup;
 			children = (
-				E577855D20BEF00F0033DC18 /* carsample.db */,
+				E577858C20C032AA0033DC18 /* cars.db */,
 				E577854720BEEF0E0033DC18 /* db */,
 				E5F8E1CC20AE9F2000D5FC18 /* Supporting Files */,
 				E57C228120B3099800A9ADB0 /* AR Files */,
@@ -168,7 +229,9 @@
 				E5F8E1CF20AE9F4A00D5FC18 /* UIButton.swift */,
 				E547EC5620B2B917009B090B /* ImageClassificationViewController.swift */,
 				E547EC5420B2B90F009B090B /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+				E577858A20C005DE0033DC18 /* DataController.swift */,
 				E5F8E1B020AE9EAD00D5FC18 /* Main.storyboard */,
+				E577855F20BFD51D0033DC18 /* ARInfoViewController.swift */,
 				E57C227D20B3068000A9ADB0 /* ARViewController.swift */,
 				E57C227F20B3077500A9ADB0 /* StatusViewController.swift */,
 				E5959E5620BD67520079E700 /* OurCars.mlmodel */,
@@ -189,8 +252,10 @@
 		E5F8E1CC20AE9F2000D5FC18 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E577856520BFE7030033DC18 /* carthumbnail */,
 				E5F8E1CD20AE9F2000D5FC18 /* home.png */,
 				E547EC6220B2D6BD009B090B /* noImage.png */,
+				E577858820BFF33D0033DC18 /* carinfo.png */,
 				E5F8E1B320AE9EAE00D5FC18 /* Assets.xcassets */,
 				E5F8E1B520AE9EAE00D5FC18 /* LaunchScreen.storyboard */,
 			);
@@ -279,12 +344,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E577855E20BEF1390033DC18 /* carsample.db in Resources */,
+				E577858D20C032D90033DC18 /* cars.db in Resources */,
+				E577858920BFF33D0033DC18 /* carinfo.png in Resources */,
+				E577857E20BFE74F0033DC18 /* volkswagen_tiguan.png in Resources */,
 				E5F8E1CE20AE9F2000D5FC18 /* home.png in Resources */,
+				E577857F20BFE74F0033DC18 /* kia_allnewmorning.png in Resources */,
+				E577857D20BFE74F0033DC18 /* toyota_sienna.png in Resources */,
+				E577857720BFE74F0033DC18 /* mini_countryman.png in Resources */,
+				E577858120BFE74F0033DC18 /* hyundai_kona.png in Resources */,
+				E577858220BFE74F0033DC18 /* bmw_i8.png in Resources */,
+				E577857820BFE74F0033DC18 /* benz_eclass.png in Resources */,
+				E577857A20BFE74F0033DC18 /* volkswagen_passat.png in Resources */,
 				E57C228720B30A3F00A9ADB0 /* LabelScene.sks in Resources */,
+				E577857620BFE74F0033DC18 /* benz_gls.png in Resources */,
+				E577858020BFE74F0033DC18 /* toyota_camry.png in Resources */,
+				E577858420BFE74F0033DC18 /* mini_hatch.png in Resources */,
 				E5F8E1B720AE9EAE00D5FC18 /* LaunchScreen.storyboard in Resources */,
+				E577858520BFE74F0033DC18 /* audi_q7.png in Resources */,
+				E577857B20BFE74F0033DC18 /* audi_a6.png in Resources */,
 				E547EC6320B2D6BD009B090B /* noImage.png in Resources */,
+				E577857C20BFE74F0033DC18 /* bmw_i3.png in Resources */,
 				E5F8E1B420AE9EAE00D5FC18 /* Assets.xcassets in Resources */,
+				E577858320BFE74F0033DC18 /* hyundai_veloster.png in Resources */,
+				E577857920BFE74F0033DC18 /* kia_k9.png in Resources */,
 				E5F8E1B220AE9EAD00D5FC18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,9 +388,11 @@
 				E5959E5720BD67530079E700 /* OurCars.mlmodel in Sources */,
 				E57C228020B3077500A9ADB0 /* StatusViewController.swift in Sources */,
 				E577855720BEEF5D0033DC18 /* FMResultSet.m in Sources */,
+				E577856020BFD51D0033DC18 /* ARInfoViewController.swift in Sources */,
 				E577855620BEEF5D0033DC18 /* FMDatabase.m in Sources */,
 				E57C227E20B3068000A9ADB0 /* ARViewController.swift in Sources */,
 				E547EC5520B2B910009B090B /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				E577858B20C005DE0033DC18 /* DataController.swift in Sources */,
 				E5F8E1AF20AE9EAD00D5FC18 /* ViewController.swift in Sources */,
 				E577855820BEEF5D0033DC18 /* FMDatabasePool.m in Sources */,
 				E57C228520B30A3F00A9ADB0 /* TemplateLabelNode.swift in Sources */,
