@@ -76,11 +76,7 @@ class DataController: UIViewController {
     }
     
     func showImage(_ carName: String) {
-        
-        carImage = UIImage(named: carName+".png")
-    
+        carImage = UIImage(named: carName)
+        carinfoImage.image = carImage
     }
-    
-    
-    
 }
