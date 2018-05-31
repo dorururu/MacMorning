@@ -78,7 +78,7 @@ class DataController: UIViewController {
     func showImage(_ carName: String) {
         switch carName {
         case "benz_eclass":
-            carinfoImage.image = UIImage(named: "benz_eclass.png")
+            carImage = UIImage(named: "benz_eclass.png")
         case "benz_gls":
             carImage = UIImage(named: "benz_gls.png")
         case "audi_a6":
